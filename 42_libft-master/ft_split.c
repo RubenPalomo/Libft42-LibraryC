@@ -6,14 +6,13 @@
 /*   By: rpalomo- <rpalomo-@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/26 13:23:15 by rpalomo-          #+#    #+#             */
-/*   Updated: 2022/08/06 18:59:06 by rpalomo-         ###   ########.fr       */
+/*   Updated: 2022/09/18 13:49:48 by rpalomo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-static int	ft_count_parts(const char *s, char c)
+static int	ft_count_chars(const char *s, char c)
 {
 	int	i;
 	int	parts;
@@ -89,7 +88,7 @@ char	**ft_split(const char *s, char c)
 
 	if (!s)
 		return (NULL);
-	parts = ft_count_parts(s, c);
+	parts = ft_count_chars(s, c);
 	split = (char **)malloc(sizeof(char *) * (parts + 1));
 	if (!split)
 		return (NULL);
@@ -98,20 +97,3 @@ char	**ft_split(const char *s, char c)
 		return (NULL);
 	return (split);
 }
-
-/*int  main()
-{
-	char **dest;
-	char P[] = "   hola papu que  tal   ";
-	char U = ' ';
-	int	i = 0;
-
-	printf("%s\n", P);
-	dest = ft_split(P, U);
-	while (dest[i])
-	{
-		printf("part = %d -> %s \n", i, dest[i]);
-		i++;
-	}
-	return (0);
-}*/

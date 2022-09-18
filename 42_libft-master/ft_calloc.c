@@ -6,7 +6,7 @@
 /*   By: rpalomo- <rpalomo-@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 20:20:55 by rpalomo-          #+#    #+#             */
-/*   Updated: 2022/08/15 16:46:19 by rpalomo-         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:12:02 by rpalomo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,16 +36,3 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (ptr);
 }
-
-/*int	main(void)
-{
-	size_t	count;
-	size_t	size;
-	char	*ptr;
-
-	count = 1860000000007407000;
-	size = 0;
-	ptr = ft_calloc(count, size);
-	printf("dirección = %p\nvalor = %s", &ptr, ptr);
-	return (0);
-}*/

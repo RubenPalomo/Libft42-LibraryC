@@ -6,7 +6,7 @@
 #    By: rpalomo- <rpalomo-@student.42madrid>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/26 17:08:15 by rpalomo-          #+#    #+#              #
-#    Updated: 2022/08/27 19:08:13 by rpalomo-         ###   ########.fr        #
+#    Updated: 2022/09/18 11:52:22 by rpalomo-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,10 +20,10 @@ SRCS			= ft_isalnum.c ft_isprint.c ft_memcmp.c ft_putchar_fd.c \
 				  ft_isalpha.c ft_strrchr.c ft_memset.c ft_striteri.c \
 				  ft_split.c ft_strmapi.c
 
-BONUS			= ft_lstadd_front_bonus.c ft_lstclear_bonus.c \
-				  ft_lstdelone_bonus.c ft_lstiter_bonus.c ft_lstlast_bonus.c \
-				  ft_lstmap_bonus.c ft_lstnew_bonus.c ft_lstsize_bonus.c \
-				  ft_lstadd_back_bonus.c
+BONUS			= ft_lstadd_front.c ft_lstclear.c \
+				  ft_lstdelone.c ft_lstiter.c ft_lstlast.c \
+				  ft_lstmap.c ft_lstnew.c ft_lstsize.c \
+				  ft_lstadd_back.c
 
 OBJS			= $(SRCS:.c=.o)
 

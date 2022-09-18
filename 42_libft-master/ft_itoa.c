@@ -6,7 +6,7 @@
 /*   By: rpalomo- <rpalomo-@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/26 15:28:33 by rpalomo-          #+#    #+#             */
-/*   Updated: 2022/08/10 14:57:33 by rpalomo-         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:46:25 by rpalomo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@ static int	ft_len_nbr(int n)
 	i = 1;
 	if (n < 0)
 	{
-		n = n / 10;
+		n /= 10;
 		i++;
-		n = n * -1;
+		n *= -1;
 		i++;
 	}
 	while (n > 9)
 	{
-		n = n / 10;
+		n /= 10;
 		i++;
 	}
 	return (i);
@@ -82,13 +82,3 @@ char	*ft_itoa(int n)
 	ft_strrev(str);
 	return (str);
 }
-
-/*int	main(void)
-{
-	long long		n = -2147483648LL;
-	char	*i;
-
-	i = ft_itoa(n);
-	printf("n = %d\nft_itoa = %s\n", (int)n, i);
-	return (0);
-}*/

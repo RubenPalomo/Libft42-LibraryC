@@ -6,7 +6,7 @@
 /*   By: rpalomo- <rpalomo-@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 20:05:33 by rpalomo-          #+#    #+#             */
-/*   Updated: 2022/08/08 20:40:34 by rpalomo-         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:04:52 by rpalomo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,20 +55,3 @@ int	ft_atoi(const char *str)
 	}
 	return (res * is_neg);
 }
-
-/*int	main(void)
-{
-	char	n[40] = "+\t\v\f\r\n \f1234";
-	char	m[40] = "2147483648";
-
-	int		i;
-	int		j;
-
-	i = ft_atoi(n);
-	j = atoi(n);
-	printf ("atoi = %d\nft_atoi = %d\n", j, i);
-	i = ft_atoi(m);
-	j = atoi(m);
-	printf ("atoi = %d\nft_atoi = %d\n", j, i);
-	return (0);
-}*/
